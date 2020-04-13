@@ -1,0 +1,13 @@
+server:
+  port: 8080
+  
+  servlet:
+    application-display-name: Spring Microservices
+
+
+
+#logging:
+#  file:
+#    name: Mynewlogfile.TXT
+#    path: C:\
+#    level: DEBUG    
