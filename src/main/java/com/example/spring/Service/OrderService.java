@@ -93,7 +93,7 @@ public RestaurantOrderDto UpdateOrder(RestaurantOrderDto newrestaurantorderdto) 
 	 else {
 		 log.info("No Mathcing Records found to update");
 		 BeanUtils.copyProperties(newrestaurantorderdto,resorderdto);
-		 resorderdto.setMessage("No matching  Records found to update");
+		 resorderdto.setMessage("No matching  Records found to update the databse");
 		 resorderdto.setStatus(Boolean.FALSE);
 		 
 		 
