@@ -14,5 +14,8 @@ public interface restaurantOrderRepository extends JpaRepository<orderRequest, L
 	@Modifying
 	@Query("UPDATE orderRequest A SET A.orderDetails = ?1 where A.customerId = ?2 ")
 	void updateOrderlist(String orderDetails ,String customerId );
+	@Modifying
+	@Query("DELETE from orderRequest A where A.customerId = ?1 ")
+	void deleteRecord(String customerId);
 		
 }
